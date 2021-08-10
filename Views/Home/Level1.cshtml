@@ -19,5 +19,244 @@
             <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li>
             <li>...all players with first name "Alexander" OR first name "Wyatt"</li>
         </ol>
+        <div style="border: 1px solid grey;">
+            <h6>Womens Leagues</h6>
+            <ol>
+                @foreach (var league in ViewBag.Womens)
+
+
+
+                {
+                    <li>@league.Name</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Hockey Leagues</h6>
+            <ol>
+                @foreach (var league in ViewBag.Hockey)
+
+
+
+                {
+                    <li>@league.Name</li>
+
+
+
+                }
+            </ol>
+        </div>
+        <div style="border: 1px solid grey;">
+            <h6>No Football!</h6>
+            <ol>
+                @foreach (var league in ViewBag.NoFootball)
+
+
+
+                {
+                    <li>@league.Name</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Conference</h6>
+            <ol>
+                @foreach (var league in ViewBag.Conference)
+
+
+
+                {
+                    <li>@league.Name</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Atlantic</h6>
+            <ol>
+                @foreach (var league in ViewBag.Atlantic)
+
+
+
+                {
+                    <li>@league.Name</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Dallas</h6>
+            <ol>
+                @foreach (var league in ViewBag.Dallas)
+
+
+
+                {
+                    <li>@league.TeamName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Raptors</h6>
+            <ol>
+                @foreach (var league in ViewBag.Raptors)
+
+
+
+                {
+                    <li>@league.TeamName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>City</h6>
+            <ol>
+                @foreach (var league in ViewBag.Cities)
+
+
+
+                {
+                    <li>@league.TeamName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>T's</h6>
+            <ol>
+                @foreach (var league in ViewBag.T)
+
+
+
+                {
+                    <li>@league.TeamName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Teams</h6>
+            <ol>
+                @foreach (var league in ViewBag.Teams)
+
+
+
+                {
+                    <li>@league.Location</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Teams Reversed</h6>
+            <ol>
+                @foreach (var league in ViewBag.TeamsR)
+
+
+
+                {
+                    <li>@league.TeamName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Cooper</h6>
+            <ol>
+                @foreach (var league in ViewBag.Cooper)
+
+
+
+                {
+                    <li>@league.FirstName @league.LastName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Josh</h6>
+            <ol>
+                @foreach (var league in ViewBag.Joshua)
+
+
+
+                {
+                    <li>@league.FirstName @league.LastName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>No Joshs</h6>
+            <ol>
+                @foreach (var league in ViewBag.NoJosh)
+
+
+
+                {
+                    <li>@league.FirstName @league.LastName</li>
+
+
+
+                }
+            </ol>
+        </div>
+
+        <div style="border: 1px solid grey;">
+            <h6>Alex and Wyatts</h6>
+            <ol>
+                @foreach (var league in ViewBag.AlexOrWyatt)
+
+
+
+                {
+                    <li>@league.FirstName @league.LastName</li>
+
+
+
+                }
+            </ol>
+        </div>
     </div>
+</div>
 </div>

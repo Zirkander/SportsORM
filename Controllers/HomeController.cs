@@ -31,6 +31,36 @@ namespace SportsORM.Controllers
         [HttpGet("level_1")]
         public IActionResult Level1()
         {
+            ViewBag.Womens = _context.Leagues.Where(l => l.Name.Contains("Women")).ToList();
+
+            ViewBag.Hockey = _context.Leagues.Where(l => l.Name.Contains("Hockey")).ToList();
+
+            ViewBag.NoFootball = _context.Leagues.Where(l =>! l.Name.Contains("Football")).ToList();
+
+            ViewBag.Conference = _context.Leagues.Where(l => l.Name.Contains("Conference")).ToList();
+
+            ViewBag.Atlantic = _context.Leagues.Where(l => l.Name.Contains("Atlantic")).ToList();
+
+            ViewBag.Dallas = _context.Teams.Where(t => t.Location.Contains("Dallas")).ToList();
+
+            ViewBag.Raptors = _context.Teams.Where(t => t.TeamName.Contains("Raptors")).ToList();
+
+            ViewBag.Cities = _context.Teams.Where(t => t.TeamName.Contains("City")).ToList();
+
+            ViewBag.T = _context.Teams.Where(t => t.TeamName.StartsWith("T")).ToList();
+
+            ViewBag.Teams = _context.Teams.OrderBy(t => t.Location).ToList();
+
+            ViewBag.TeamsR = _context.Teams.OrderByDescending(team => team.TeamName).ToList();
+
+            ViewBag.Cooper = _context.Players.Where(n => n.LastName.Contains("Cooper")).ToList();
+
+            ViewBag.Joshua = _context.Players.Where(n => n.FirstName.Contains("Joshua")).ToList();
+
+            ViewBag.NoJosh = _context.Players.Where(n => n.LastName.Contains("Cooper") && n.FirstName != "Joshua").ToList();
+
+            ViewBag.AlexOrWyatt = _context.Players.Where(n => n.FirstName.Contains("Alexander") || n.FirstName == "Wyatt").ToList();
+
             return View();
         }
 
